@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(href="/css/styles.css", type="text/css", rel="stylesheet") 
+    block link
+    
+    script(src="/js/scripts.js")
+    block scripts
+  body
+    block content
+    .footer
+      p copyright to ComIT

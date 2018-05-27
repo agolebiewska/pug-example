@@ -1,0 +1,15 @@
+extends layout.pug
+
+block link
+  link(href="/css/products.css", type="text/css", rel="stylesheet") 
+
+block scripts
+  script(src="/js/products.js")
+
+block content
+  h1= mainTitle
+  each product in productCollection
+    div.product
+      h3= product.name
+      p.price $ #{product.price}
+      img(src=imagesFolder + product.image)
